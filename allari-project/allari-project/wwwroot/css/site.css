@@ -1,0 +1,43 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clock {
+    font-size: 30px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+
+.navigation-menu {
+    background-color: #333;
+    color:azure;
+    font-family: Orbitron;
+}
+
+footer{
+    background: #ddd;
+}
+
+h2{
+    margin-top: .5rem;
+}

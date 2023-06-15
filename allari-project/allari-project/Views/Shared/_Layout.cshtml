@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - allari_project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/allari_project.styles.css" asp-append-version="true" />
+
+    <link rel="icon" href="https://allari.com/wp-content/uploads/2023/02/Favicon-144x144-1.png" sizes="32x32">
+    <link rel="icon" href="https://allari.com/wp-content/uploads/2023/02/Favicon-144x144-1.png" sizes="192x192">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/imgs/allari_logo.png" alt="Allari logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="align-content-end">
+                    <div id="digital-clock" class="clock" onload="showClock()"></div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav justify-content-center border-bottom navigation-menu">
+            <h2>Antonio Alves Correia</h2>
+        </nav>
+    </header>
+    <div class="container container-flex">
+        <partial name="_LeftMouseTracker" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+        <div class="content-right">
+            content right
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted py-2">
+        <div class="container">
+            &copy; 2023 - <a href="https://allari.com/" target="_blank" rel="noopener noreferrer">Allari</a> 
+            <p>SSE ASSESSMENT PROJECT by Antonio Correia</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
