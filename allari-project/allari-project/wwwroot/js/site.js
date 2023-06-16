@@ -34,3 +34,12 @@ onmousemove = function(e) {
     document.getElementById("mouse-y").textContent = posY;
 
 }
+
+
+function highlightElement(elementId){
+    document.getElementById(elementId).style.border = "4px solid blue";
+}
+
+function clearBorder(elementId) {
+    document.getElementById(elementId).style.border = "none";
+}

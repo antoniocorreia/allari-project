@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/image-slider.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/allari_project.styles.css" asp-append-version="true" />
 
     <link rel="icon" href="https://allari.com/wp-content/uploads/2023/02/Favicon-144x144-1.png" sizes="32x32">
@@ -17,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-2">
+        <nav id="header" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-2">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="~/imgs/allari_logo.png" alt="Allari logo" />
@@ -31,21 +32,24 @@
                 </div>
             </div>
         </nav>
-        <nav class="nav justify-content-center border-bottom navigation-menu">
+        <nav id="navigation-bar" class="nav justify-content-center border-bottom navigation-menu">
             <h2>Antonio Alves Correia</h2>
         </nav>
     </header>
-    <div class="container container-flex">
-        <partial name="_LeftMouseTracker" />
-        <main role="main" class="pb-3">
+    <div class="container-flex">
+        <aside id="content-left" class="content-left">
+            <partial name="_MouseTracker" />
+        </aside>
+        
+        <main id="main-content" role="main" class="pb-3">
             @RenderBody()
         </main>
-        <div class="content-right">
-            content right
-        </div>
+        <aside id="content-right" class="content-right">
+            <partial name="_ImageSlider" />
+        </aside>
     </div>
 
-    <footer class="border-top footer text-muted py-2">
+    <footer id="footer" class="border-top footer text-muted py-2">
         <div class="container">
             &copy; 2023 - <a href="https://allari.com/" target="_blank" rel="noopener noreferrer">Allari</a> 
             <p>SSE ASSESSMENT PROJECT by Antonio Correia</p>
@@ -54,6 +58,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/image-slider.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
