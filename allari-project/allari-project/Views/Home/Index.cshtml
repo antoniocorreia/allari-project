@@ -4,49 +4,21 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>This is a submission for Allari SSE ASSESSMENT PROJECT created by Antonio Correia, this project was created using ASP.NET Core (MVC). Above there is a list of animals loaded through a ajax call.</p>
     <p>
-        The website layout contains a 
+        This is a submission for Allari SSE ASSESSMENT PROJECT created by Antonio Correia, this project was created using ASP.NET Core (MVC). Above there is a list of animals loaded through a ajax call.
+        The website layout contains a
         <span class="tag" onmouseover="highlightElement('header')" onmouseout="clearBorder('header')">header</span>,
         <span class="tag" onmouseover="highlightElement('navigation-bar')" onmouseout="clearBorder('navigation-bar')">navigation bar</span>,
         <span class="tag" onmouseover="highlightElement('content-right')" onmouseout="clearBorder('content-right')">content right</span> and
         <span class="tag" onmouseover="highlightElement('content-left')" onmouseout="clearBorder('content-left')">content left</span>,
         <span class="tag" onmouseover="highlightElement('main-content')" onmouseout="clearBorder('main-content')">main content</span> and
         <span class="tag" onmouseover="highlightElement('footer')" onmouseout="clearBorder('footer')">footer</span>.
-    </p>
-    <p>
         In the header there is a digital clock with current time using the computer time updating
         seconds, minutes and hours in real time using <a target="_blank" href="~/css/site.css" rel="stylesheet">CSS</a> & <a target="_blank" href="~/js/site.js">JS</a> code.
     </p>
 </div>
 
+<button class="btn btn-primary" onclick="loadPlantsList()">Load list</button>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@@twitter</td>
-        </tr>
-    </tbody>
-</table>
+<div id="plants-table">
+</div>

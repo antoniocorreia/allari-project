@@ -43,3 +43,30 @@ function highlightElement(elementId){
 function clearBorder(elementId) {
     document.getElementById(elementId).style.border = "none";
 }
+
+
+function loadPlantsList() {
+    var plantsTableContainer = document.getElementById("plants-table");
+    plantsTableContainer.innerHTML = "Loading...";
+    
+    $.ajax({
+        type: "GET",
+        url: "/Home/PlantsTable",
+        success: function (response) {
+            document.getElementById("plants-table").innerHTML = response;
+        },
+        failure: function (response) {
+            alert(response.responseText);
+        },
+        error: function (response) {
+            alert(response.responseText);
+        }
+    });
+}
+function loadPlantsListFetch() {
+    fetch('http://yourapi.com/data')
+        .then(response => {
+            console.log(response)
+        });
+}
+    

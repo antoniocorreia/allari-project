@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Bamboo",
+    "botanicalName": "Phyllostachys aurea",
+    "type": "Perennial, rhizome, grass",
+    "commonNames": "Bamboo, golden bamboo, fishpole bamboo, fairyland bamboo",
+    "link": "https://www.thespruce.com/grow-bamboo-inside-1902611",
+    "imageUrl": "https://www.thespruce.com/thmb/ssRaBoffGUI2HBVG3PTzwD3OYnI=/600x400/how-to-grow-golden-bamboo-5077107-01-667ff5f2e49c49928ab91724728b498a.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cactus",
+    "botanicalName": "Cactaceae",
+    "type": "Succulent, perennial",
+    "commonNames": "Cactus",
+    "link": "https://www.thespruce.com/how-to-grow-cactus-1902954",
+    "imageUrl": "https://www.thespruce.com/thmb/z9nb_PewQ6UZlKLHMdQ-wP12QMw=/600x400/how-to-grow-cactus-1902954-01-e1bb010180b54eb1970ddf2eed54f86f.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Eucalyptus",
+    "botanicalName": "Eucalyptus cinerea",
+    "type": "Tree",
+    "commonNames": "Eucalyptus, silver dollar tree, argyle apple",
+    "link": "https://www.thespruce.com/how-to-grow-and-use-eucalyptus-1762354",
+    "imageUrl": "https://www.thespruce.com/thmb/MDsaqFjxRMAQQ9xbBBauvJ5Z1UA=/600x400/DryingEucalyptus_300-7063b7e0fd7f4ce9aea79223b6512ad3.jpg"
+  }
+]

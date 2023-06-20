@@ -1,0 +1,29 @@
+﻿@model List<allari_project.Models.Plant>
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Botanical Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Common Names</th>
+            <th scope="col">Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var plant in Model)
+        {
+            <tr>
+                <th scope="row">@plant.Id</th>
+                <td>@plant.Name</td>
+                <td>@plant.BotanicalName</td>
+                <td>@plant.Type</td>
+                <td>@plant.CommonNames</td>
+                <td><a href="@plant.Link">@plant.Link</a></td>
+            </tr>
+        }
+       
+       
+    </tbody>
+</table>
