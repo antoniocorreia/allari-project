@@ -66,6 +66,8 @@ function loadPlantsList() {
     updateImageSlider();
 }
 
+loadPlantsList();
+
 function updateImageSlider() {
     var imgSliderElement = document.getElementById("content-right");
     imgSliderElement.innerHTML = "Loading...";
