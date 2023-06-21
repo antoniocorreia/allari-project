@@ -31,30 +31,34 @@
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 8px 0 0 8px;
 }
 
     
     .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
+        color:white;
     }
 
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+
+.caption {
     position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    bottom: 0px;
+    color: #f2f2f2;
+    background: #333;
+    border-radius: 0 8px 0 0;
+    font-size: 12px;
+    padding: 8px 12px;
 }
 
 .numbertext {
     color: #f2f2f2;
+    background: #333;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    border-radius: 0 0 8px 0;
 }
 
 .dot {

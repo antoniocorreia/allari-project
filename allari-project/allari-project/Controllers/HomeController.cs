@@ -33,16 +33,28 @@ namespace allari_project.Controllers
         public IActionResult PlantsTable()
         {
             _logger.LogInformation("Loading Plants Table");
-            List<Plant> plants = new List<Plant>();
+            List<Plant> plants = LoadPlantsListFromJson();
 
+            return PartialView("_PlantsTable", plants);
+        }
+
+        public IActionResult ImageSlider()
+        {
+            _logger.LogInformation("Loading Images");
+            List<Plant> plants = LoadPlantsListFromJson();
+
+            return PartialView("_ImageSlider", plants);
+        }
+
+        private List<Plant> LoadPlantsListFromJson()
+        {
+            List<Plant> plants = new List<Plant>();
             using (StreamReader r = new StreamReader("wwwroot/data/plants.json"))
             {
                 string json = r.ReadToEnd();
                 plants = JsonConvert.DeserializeObject<List<Plant>>(json) ?? new List<Plant>();
-                
             }
-
-            return PartialView("_PlantsTable", plants);
+            return plants;
         }
     }
 }

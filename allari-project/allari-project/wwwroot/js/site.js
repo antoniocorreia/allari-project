@@ -53,7 +53,29 @@ function loadPlantsList() {
         type: "GET",
         url: "/Home/PlantsTable",
         success: function (response) {
-            document.getElementById("plants-table").innerHTML = response;
+            plantsTableContainer.innerHTML = response;
+        },
+        failure: function (response) {
+            alert(response.responseText);
+        },
+        error: function (response) {
+            alert(response.responseText);
+        }
+    });
+
+    updateImageSlider();
+}
+
+function updateImageSlider() {
+    var imgSliderElement = document.getElementById("content-right");
+    imgSliderElement.innerHTML = "Loading...";
+
+    $.ajax({
+        type: "GET",
+        url: "/Home/ImageSlider",
+        success: function (response) {
+            imgSliderElement.innerHTML = response;
+            showSlides(1);
         },
         failure: function (response) {
             alert(response.responseText);
@@ -64,29 +86,3 @@ function loadPlantsList() {
     });
 }
 
-
-function createRipple(event) {
-    const button = event.currentTarget;
-
-    const circle = document.createElement("span");
-    const diameter = Math.max(button.clientWidth, button.clientHeight);
-    const radius = diameter / 2;
-
-    circle.style.width = circle.style.height = `${diameter}px`;
-    circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
-    circle.style.top = `${event.clientY - (button.offsetTop + radius)}px`;
-    circle.classList.add("ripple");
-
-    const ripple = button.getElementsByClassName("ripple")[0];
-
-    if (ripple) {
-        ripple.remove();
-    }
-
-    button.appendChild(circle);
-}
-
-const rippleButtons = document.getElementsByClassName("btn-ripple");
-for (const button of rippleButtons) {
-    button.addEventListener("click", createRipple);
-}
