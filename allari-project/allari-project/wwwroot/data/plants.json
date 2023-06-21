@@ -25,5 +25,50 @@
     "commonNames": "Eucalyptus, silver dollar tree, argyle apple",
     "link": "https://www.thespruce.com/how-to-grow-and-use-eucalyptus-1762354",
     "imageUrl": "https://www.thespruce.com/thmb/MDsaqFjxRMAQQ9xbBBauvJ5Z1UA=/600x400/DryingEucalyptus_300-7063b7e0fd7f4ce9aea79223b6512ad3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Fiddle-Leaf Fig",
+    "botanicalName": "Ficus lyrata",
+    "type": "Broadleaf evergreen",
+    "commonNames": "Fiddle-leaf fig, banjo fig",
+    "link": "https://www.thespruce.com/grow-fiddle-leaf-fig-indoors-1902756",
+    "imageUrl": "https://www.thespruce.com/thmb/04Dej-WMhZCGiIpYS-3Sz7nzeDw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/grow-fiddle-leaf-fig-indoors-1902756-hero-feca31e64e91430794e2bdcc9fa1e901.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Orchid",
+    "botanicalName": "Cattleya",
+    "type": "Perennial",
+    "commonNames": "Cattleya orchid, orchid, corsage orchid, Queen of the Orchids",
+    "link": "https://www.thespruce.com/cattleya-orchids-overview-1902861",
+    "imageUrl": "https://www.thespruce.com/thmb/QeEaPurQETUnYCCQL6phZSaFN4Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/cattleya-orchids-overview-1902861-01-41afe3700488424698d11752a10eee27.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Philodendron",
+    "botanicalName": "Philodendron spp.",
+    "type": "Perennial",
+    "commonNames": "Philodendron",
+    "link": "https://www.thespruce.com/grow-philodendron-houseplants-1902768",
+    "imageUrl": "https://www.thespruce.com/thmb/zSzhkAqo3q1a82FjxvNwGnO78IE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/grow-philodendron-houseplants-1902768-04-8bee1496f67e41c392304329eaea505e.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Snake Plant",
+    "botanicalName": "Dracaena trifasciata",
+    "type": "Evergreen perennial typically grown as a houseplant",
+    "commonNames": "Snake plant, Viper's bowstring hemp, Mother-in-law's tongue",
+    "link": "https://www.thespruce.com/snake-plant-care-overview-1902772",
+    "imageUrl": "https://www.thespruce.com/thmb/CpEP-cPmDmz6kwdmVKbhcrdCJuY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/snake-plant-care-overview-1902772-04-d3990a1d0e1d4202a824e929abb12fc1-349b52d646f04f31962707a703b94298.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Split-Leaf Philodendron",
+    "botanicalName": "Monstera deliciosa",
+    "type": "Vine",
+    "commonNames": "Split-leaf philodendron, Swiss cheese plant, windowleaf, ceriman",
+    "link": "https://www.thespruce.com/how-to-grow-monstera-deliciosa-5072671",
+    "imageUrl": "https://www.thespruce.com/thmb/d6mlSpKxdAIaOQBaUDH0S6A3e_k=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how-to-grow-monstera-deliciosa-5072671-01-a65286b8b3b8402882c7ad2c57756bbe.jpg"
   }
 ]

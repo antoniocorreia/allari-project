@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -37,14 +38,14 @@
         </nav>
     </header>
     <div class="container-flex">
-        <aside id="content-left" class="content-left">
+        <aside id="content-left">
             <partial name="_MouseTracker" />
         </aside>
         
         <main id="main-content" role="main" class="pb-3">
             @RenderBody()
         </main>
-        <aside id="content-right" class="content-right">
+        <aside id="content-right">
             <partial name="_ImageSlider" />
         </aside>
     </div>
