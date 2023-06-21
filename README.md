@@ -1,11 +1,12 @@
 # Allari SSE ASSESSMENT PROJECT
 
-Project created using ASP.NET Core (MVC) with .NET6 and C#. Bootstrap, vanilla javascript, and jQuery
+Project created using ASP.NET Core (MVC) with .NET6 and C#. Bootstrap, vanilla javascript, and jQuery.
+
+You can access a live Azure web app here https://allari-project-antonio-correia.azurewebsites.net/
 
 To run this project clone this repository and open it with Visual Studio 2022 IDE or execute `dotnet run` in the developer prompt inside the project folder directory.
 
-![image](https://github.com/antoniocorreia/allari-project/assets/1815134/b3b2c6da-07da-4e29-b2e7-097a4f6003bf)
-
+![image](https://github.com/antoniocorreia/allari-project/assets/1815134/9f3e1fc2-8b02-4ac3-8905-5582e6ddff60)
 
 The website layout contains a header, navigation bar, content right and left, main content, and footer.
 
